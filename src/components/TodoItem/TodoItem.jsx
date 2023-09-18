@@ -11,8 +11,8 @@ export const TodoItem = ({ todo, onDeleteTodo, id }) => {
     } 
   
     return (
-        <li>
-            <p className={checkbox || isAllChecked ? css.textDelete : ''}>{todo}</p>
+        <li className={css.liItem}>
+            <p className={`${css.text} ${checkbox || isAllChecked ? css.textDelete : ''}`}>{todo}</p>
             <label>
                 <input type="checkbox" onChange={handleCheckbox} />
             </label>
@@ -20,6 +20,7 @@ export const TodoItem = ({ todo, onDeleteTodo, id }) => {
                 type="button"
                 onClick={() => onDeleteTodo(id)}
                 disabled={!checkbox}>Delete</button>
+            
          </li>
      )
 }

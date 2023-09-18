@@ -1,4 +1,21 @@
+.text {
+  /* width: 300px; */
+  width: 0;
+  flex-grow: 1;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
 .textDelete {
   text-decoration: line-through;
   color: red;
+}
+
+.liItem {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
